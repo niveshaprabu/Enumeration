@@ -23,89 +23,57 @@ Open terminal and try execute some kali linux commands
 
 ## Pen Test Tools Categories:  
 
-Following Categories of pen test tools are identified:
-Information Gathering.
+### SITE : 
 
-Google Hacking:
-
-Google hacking, also known as Google dorking, is a technique that involves using advanced operators to perform targeted searches on Google. These operators can be used to search for specific types of information, such as sensitive data that may have been inadvertently exposed on the web. Here are some advanced operators that can be used for Google hacking:
-
-site: This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
-Following searches for all the sites that is in the domain yahoo.com
-
-filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
-Following searches for pdf file in the domain yahoo.com
+![Screenshot 2024-10-28 224102](https://github.com/user-attachments/assets/85a75c11-2c23-4498-b675-de0c9afb3a78)
 
 
 
-intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+### FILE TYPE :
+
+![Screenshot 2024-10-28 224113](https://github.com/user-attachments/assets/171775c4-fb88-4e59-a78d-4581929e8872)
 
 
-inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
-
-intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
-
-link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
-
-cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
-
- 
-#DNS Enumeration
+### INTEXT : 
+![Screenshot 2024-10-28 224126](https://github.com/user-attachments/assets/65c3e9a9-3230-4113-8665-32c1acf45335)
 
 
-##DNS Recon
-provides the ability to perform:
-Check all NS records for zone transfers
-Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TXT)
-Perform common SRV Record Enumeration
-Top level domain expansion
-## OUTPUT:
+
+### INURL : 
+
+![Screenshot 2024-10-28 224136](https://github.com/user-attachments/assets/09bfc1a3-d9a9-4022-9ed6-a896b7fd12b0)
+
+
+
+### LINK :
+![Screenshot 2024-10-28 224147](https://github.com/user-attachments/assets/1fa475ad-8c19-4787-9e7b-1928fce34f75)
+
+
+
+## DNS Enumeration::
+
+## DNS Recon:
+![Screenshot 2024-10-28 224200](https://github.com/user-attachments/assets/2e6ec408-9614-4097-baba-607c18bc28ca)
 
 
 
 
+## dnsenum: 
+
+![Screenshot 2024-10-28 224210](https://github.com/user-attachments/assets/81de8e30-e0b7-49c5-9e28-4b225976ff85)
+
+
+![Screenshot 2024-10-28 224219](https://github.com/user-attachments/assets/da02fb52-6550-4ac8-b7b6-4dab429b0d9d)
 
 
 
-##dnsenum
-Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
+## smtp-user-enum:
+![Screenshot 2024-10-28 224227](https://github.com/user-attachments/assets/5a86839c-b879-4b6f-b3a0-ab9a2e2f3cb1)
 
-Get the host’s addresses (A record).
-Get the namservers (threaded).
-Get the MX record (threaded).
-Perform axfr queries on nameservers and get BIND versions(threaded).
-Get extra names and subdomains via google scraping (google query = “allinurl: -www site:domain”).
-Brute force subdomains from file, can also perform recursion on subdomain that have NS records (all threaded).
-Calculate C class domain network ranges and perform whois queries on them (threaded).
-Perform reverse lookups on netranges (C class or/and whois netranges) (threaded).
-Write to domain_ips.txt file ip-blocks.
-This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
+## nmap –script smtp-enum-users.nse :
 
 
-##smtp-user-enum
-Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
-
-
-In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
-
-select any username in the first column of the above file and check the same
-
-
-#Telnet for smtp enumeration
-Telnet allows to connect to remote host based on the port no. For smtp port no is 25
-telnet <host address> 25 to connect
-and issue appropriate commands
-  
- ##Output
-  
-  
-
-## nmap –script smtp-enum-users.nse <hostname>
-
-The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
-
-
-## OUTPUT:
+![Screenshot 2024-10-28 224447](https://github.com/user-attachments/assets/088ad467-ad80-4529-a4d4-e5511190e1d6)
 
 
 ## RESULT:
